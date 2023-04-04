@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="style.css">
+</head>                
+<body bgcolor="#7FB3D5">
+    <div id="About Me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me4.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle"></h1>About Me</h1>
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links  active-link" onclick="opentab('study')"> Study</p>
+                        
+                        
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App development</li>
+                            <li><span>UI</span><br>Designing Web interfaces</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+
+                    </div>
+                
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Freelancing jobs</li>
+                            <li><span>2022 - current</span><br> online trading</li>
+                            <li><span>2022 - current</span><br> web designing</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="study">
+                        <ul>
+                            <li><span>2020 - current </span><br>KU</li>
+                            <li><span>2016 - 2020 </span><br> Kenya Highschool</li>
+                            <li><span>2014 - 2015</span><br> Mary Immaculate</li>
+                        </ul>
+
+                    </div>
+                
+                </div>
+                </div>
+            
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classlist.remove("active-tab");
+                }
+                event.currentTarget.classlist.add("active-link");
+                document.getElementById(tabname).classlist.add("active-tab");
+            }
+        </script>
+    
+    <h2>ABOUT</h2>
+    <p>I study in Kenyatta University and I am pursuing a degree in BIT(Bachelor of Information Technology).
+        I also work part time on online jobs such as freelancing which include: Article writing and copywriting.
+    </p>
+    <h2>My Hobbies</h2>
+    <p>Here is a list of what i like to do:</p>
+    <ol>
+        <li>Watching movies/series</li>
+        <li>Hangouts with friends</li>
+        <li>Reading books</li>
+        <li>Site-seeing</li>
+        <li>Gaming</li>
+    </ol>
+    <h3>Here is a brief timetable of what I do during the week.</h3>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <table style="width: 80%" align="center">
+        <caption>Faith's Timetable</caption>
+        <tr>
+            <td width=50%></td>
+            <th width = 150> Monday</th>
+            <th width = 150> Tuesday</th>
+            <th width = 150> Wednesday</th>
+            <th width = 150> Thursday</th>
+            <th width = 150> Friday</th>
+        </tr>
+        <tr>
+            <td> Morning</td>
+            <td> Lectures</td>
+            <td> lectures</td>
+            <td>Free</td>
+            <td>Lectures</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td> Afternoons</td>
+            <td> Hang out with Friends</td>
+            <td> Lectures</td>
+            <td> Lectures</td>
+            <td>Polite hangouts</td>
+            <td> Free</td>
+        </tr>
+        <tr>
+            <td>Evenings/Nights</td>
+            <td>Reading</td>
+            <td>Programming</td>
+            <td> Do some projects</td>
+            <td> Watching a movie</td>
+            <td>Have fun</td>
+        </tr>
+    </table>
+   
+</body>
+</html>
